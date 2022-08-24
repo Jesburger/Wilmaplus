@@ -1,0 +1,28 @@
+{
+  "name": "WilmaPlus | Tapsa exclusive",
+
+"manifest_version": 2,
+"version": "1.1.6",	
+  "content_scripts": [{
+    "matches": ["*://*.inschool.fi/"],
+    "js": ["main.js"]},
+	{"matches":["*://*.inschool.fi/*"],
+	"js": ["MilkaInschool.js"]}
+  ],
+	
+"icons":{"48":"icons/wilmaP48.png","128":"icons/wilmaP128.png"}, 
+
+"permissions": [
+  "*://ruokalistat.espoocatering.fi/*"
+],
+   	
+"browser_specific_settings": {
+  "gecko": {
+    "id": "{fda104db-417e-4a73-bc73-b34362de3754}",
+    "strict_min_version": "42.0"
+  }
+}
+
+
+}
+  
